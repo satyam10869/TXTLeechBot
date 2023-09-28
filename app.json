@@ -20,7 +20,7 @@
         },
         "API_HASH":{
             "description":"Get your telegram API HASH from https://my.telegram.org",
-		    "value":""
+		    "value":"9"
         },
         "BOT_TOKEN":{
             "description":"Get from BotFather",
