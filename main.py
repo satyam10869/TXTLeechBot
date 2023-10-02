@@ -108,11 +108,11 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="Devloper",
-                url="https://t.me/Adrenalinators",
+                url="https://t.me/neetumamvol1",
             ),
             InlineKeyboardButton(
                 text="Repo",
-                url="https://github.com/",
+                url="https://xnxx.com/",
             ),
         ],
     ]
