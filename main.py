@@ -122,7 +122,7 @@ keyboard = InlineKeyboardMarkup(
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
 
- editable = await m.reply_text("**Hello 🤗 Wellcome To Text to Video Convert Bot🤖** \n**Bot Made By ⭐ MR.SATYAM** ⭐\n**Txt to video Command** = /txt")
+ editable = await m.reply_text("**Hello** 🤗 Wellcome To Text to Video Convert Bot🤖 \n\n**Bot Made By ⭐ MR.SATYAM** ⭐\n\n**Txt to video Command** = /txt")
 
 
 @bot.on_message(filters.command(["stop"]))
@@ -148,7 +148,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "Hello Bruh **I am Text Downloader Bot**. I can download videos from **text** file one by one.**\n\nDeveloper** : Tumhara BHAI**\nLanguage** : Python**\nFramework** : Pyrogram\n\nSend **TXT** File FORMAT {FileName : FileLink}")
+            "Hello Bruh **I am Text Downloader Bot**. I can download videos from **text** file one by one.**\n\nDeveloper** : ⭐ **MR.SATYAM** ⭐**\n\nSend **TXT** File")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
