@@ -1,7 +1,7 @@
 {
-    "name":"pyro",
+    "name":"⭐ MR.SATYAM ⭐",
     "description":"Download videos from various websites using this telegram bot",
-    "repository":"https://github.com/Adrenalinators/TXTLeechBot",
+    "repository":"https://github.com/sumit10869/TXTLeechBot",
     "buildpacks":[
         {
             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
@@ -16,15 +16,15 @@
     "env": {
         "API_ID":{
             "description": "Get your telegram API ID from https://my.telegram.org",
-            "value":""
+            "value":"21513517"
         },
         "API_HASH":{
             "description":"Get your telegram API HASH from https://my.telegram.org",
-		    "value":"9"
+		    "value":"838d3451485b95722878921877f12066"
         },
         "BOT_TOKEN":{
             "description":"Get from BotFather",
-            "value":""
+            "value":"6620473728:AAGYi4ibem33SyHOO4sVHYYKJTL13R47FKQ"
         },
         "AUTH_USERS":{
             "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
