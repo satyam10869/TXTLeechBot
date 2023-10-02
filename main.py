@@ -122,7 +122,7 @@ keyboard = InlineKeyboardMarkup(
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
 
- editable = await m.reply_text("**Hello**🤗 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Txt to video** = /txt")
+ editable = await m.reply_text("**Hello 🤗 Wellcome To Text to Video Convert Bot🤖** \n**Bot Made By ⭐ MR.SATYAM** ⭐\n**Txt to video Command** = /txt")
 
 
 @bot.on_message(filters.command(["stop"]))
