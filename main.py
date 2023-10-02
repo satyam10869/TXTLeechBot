@@ -119,28 +119,28 @@ keyboard = InlineKeyboardMarkup(
 )
 
 
-@bot.on_message(filters.command(["pyro"]))
+@bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
 
- editable = await m.reply_text("**Hi Press**\n**Text** = /pro_txt\n**Top** = /pro_top\n**Vision** = /pro_vision\n**Jw** = /pro_jw\n**Olive** = /pro_olive\n**Addapdf** = /adda_pdf")
+ editable = await m.reply_text("**Hello**🤗 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Txt to video** = /txt")
 
 
-@bot.on_message(filters.command(["cancel"]))
+@bot.on_message(filters.command(["stop"]))
 async def cancel(_, m):
     editable = await m.reply_text("Canceling All process Plz wait\n🚦🚦 Last Process Stopped 🚦🚦")
     global cancel
     cancel = True
-    await editable.edit("cancled")
+    await editable.edit("🛑**STOPPED**🛑")
     return
 
 
 @bot.on_message(filters.command("restart"))
 async def restart_handler(_, m):
-    await m.reply_text("Restarted!", True)
+    await m.reply_text("Restarted🚀", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["pro_txt"]))
+@bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -401,8 +401,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
                 prog = await m.reply_text(Show)
-                cc = f"**Name »** {name1} {res}.mkv\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
-                cc1 = f"**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                cc = f"**Index »** {str(count).zfill(3)}\n**Name »** {name1} {res}.mp4\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐"
+                cc1 = f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -456,7 +456,7 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed ❌**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
+                    f"**Downloading Failed ❌**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
                 )
                 continue
 
