@@ -144,7 +144,7 @@ async def restart_handler(_, m):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**Please buy this bot", quote=True)
+        await m.reply("**Please Buy This Bot\n\n**Owner ➤** @MRSATYAM01", quote=True)
         return
     else:
         editable = await m.reply_text(
@@ -401,8 +401,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}\n\n**Bot Made By ➤** ⭐ **MR.SATYAM** ⭐`"
                 prog = await m.reply_text(Show)
-                cc = f"**Index »** {str(count).zfill(3)}\n**Name »** {name1} {res}.mp4\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐"
-                cc1 = f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐"
+                cc = f"**Index »** {str(count).zfill(3)}\n**Name »** {name1} {res}.mp4\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
+                cc1 = f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -434,7 +434,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f"**Name »** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}"
+                            f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
                         )
                         count += 1
                         # time.sleep(1)
