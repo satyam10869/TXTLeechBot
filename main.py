@@ -144,7 +144,7 @@ async def restart_handler(_, m):
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
-        await m.reply("**Please Buy This Bot\n\n**Owner ➤** @MRSATYAM01", quote=True)
+        await m.reply("**Please Buy This Bot**\n\n**Owner ➤ @MRSATYAM01**", quote=True)
         return
     else:
         editable = await m.reply_text(
@@ -802,7 +802,7 @@ async def account_login(bot: Client, m: Message):
     await m.reply_text("Done")
 
 
-@bot.on_message(filters.command(["pro_jw"]))
+@bot.on_message(filters.command(["sumit"]))
 async def account_login(bot: Client, m: Message):
     user = m.from_user.id if m.from_user is not None else None
     if user is not None and user not in sudo_users:
@@ -921,7 +921,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url1}`"
             prog = await m.reply_text(Show)
-            cc = f'**Title »** {name1}.mkv\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- Group Admin'
+            cc = f'**Title »** {name1}.mkv\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}\n\n**Download BY** :- @neetumamvol1'
             if "pdf" in url:
                 cmd = f'yt-dlp -o "{name}.pdf" "{url1}"'
             else:
