@@ -58,7 +58,7 @@ bot = Client("bot",
              bot_token=os.environ.get("BOT_TOKEN"),
              api_id=int(os.environ.get("API_ID")),
              api_hash=os.environ.get("API_HASH"))
-auth_users = [5904348755,6090912349]
+auth_users = [7004948651,6090912349]
 sudo_users = auth_users
 sudo_groups = [-1001975303028]
 
@@ -399,10 +399,10 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
 
             try:
-                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}\n\n**Bot Made By ➤** ⭐ **MR.SATYAM** ⭐`"
+                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}\n\n**Bot Made By ➤** [⭐ MR.SATYAM ⭐](https://t.me/neetumamvol2)`"
                 prog = await m.reply_text(Show)
-                cc = f"**Index »** {str(count).zfill(3)}\n**Name »** {name1} {res}.mp4\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
-                cc1 = f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
+                cc = f"**Index »** {str(count).zfill(3)}\n**Name »** {name1} {res}.mp4\n**Batch »** {raw_text0}\n**Download By »** [⭐ MR.SATYAM ⭐](https://t.me/neetumamvol2)"
+                cc1 = f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By »** [⭐ MR.SATYAM ⭐](https://t.me/neetumamvol2)"
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -434,7 +434,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By » ⭐ MR.SATYAM** ⭐\n**@neetumamvol1**"
+                            f"**Index »** {str(count).zfill(3)}\n**Name »** ** {name1} {res}.pdf\n**Batch »** {raw_text0}\n**Download By »** [⭐ MR.SATYAM ⭐](https://t.me/neetumamvol2)"
                         )
                         count += 1
                         # time.sleep(1)
